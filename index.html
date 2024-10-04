@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riqueza em Convites</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Link para Font Awesome -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://github.com/diogenesabreu/img/blob/main/WhatsApp%20Image%202024-10-04%20at%2016.18.25%20(1).jpeg?raw=true');
+            background-size: cover;
+            background-position: center;
+            color: #3B3B3B;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative; /* Adiciona posição relativa para o pseudo-elemento */
+        }
+
+        /* Adiciona um overlay para melhorar a legibilidade do texto */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.8); /* Cor do overlay com transparência */
+            border-radius: 20px; /* Bordas arredondadas no overlay */
+            z-index: 1; /* Coloca o overlay acima da imagem de fundo */
+        }
+
+        h1 {
+            color: #D4AF37; /* Tom pastel de dourado */
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); /* Sombra mais pronunciada */
+            font-size: 3em; /* Aumenta o tamanho da fonte para o título */
+            margin-bottom: 10px; /* Espaço abaixo do título */
+            transition: transform 0.3s; /* Transição suave para o título */
+            z-index: 2; /* Coloca o título acima do overlay */
+            position: relative; /* Adiciona posição relativa para o z-index */
+        }
+
+        p {
+            color: #3B3B3B; /* Tom pastel de bege claro */
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); /* Sombra mais pronunciada */
+            font-size: 1.5em; /* Ajusta o tamanho da fonte */
+            margin-bottom: 30px; /* Espaço abaixo do parágrafo */
+            z-index: 2; /* Coloca o parágrafo acima do overlay */
+            position: relative; /* Adiciona posição relativa para o z-index */
+        }
+
+        .link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px auto; /* Espaçamento maior entre os botões */
+            padding: 15px 25px; /* Aumenta o padding dos botões */
+            width: 90%; /* Define a largura do botão */
+            max-width: 450px; /* Largura máxima para botões em telas grandes */
+            font-size: 22px; /* Aumenta o tamanho da fonte dos links */
+            text-decoration: none;
+            color: #3B3B3B; /* Cor do texto dos links */
+            background-color: rgba(255, 235, 205, 0.95); /* Fundo pastel de pêssego com maior opacidade */
+            border-radius: 25px; /* Bordas arredondadas */
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Transição suave */
+            font-weight: bold; /* Negrito */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra dos botões */
+            position: relative; /* Adiciona posição relativa para o z-index */
+            z-index: 2; /* Coloca os botões acima do overlay */
+        }
+
+        .link:hover {
+            background-color: rgba(255, 218, 185, 1); /* Efeito de aumento ao passar o mouse */
+            transform: translateY(-3px); /* Eleva o botão ao passar o mouse */
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4); /* Sombra mais forte ao passar o mouse */
+        }
+
+        .link i {
+            margin-right: 12px; /* Espaço entre ícone e texto */
+            font-size: 1.8em; /* Aumenta o tamanho do ícone */
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 16px;
+            color: #D4AF37; /* Tom pastel de dourado */
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao texto */
+            z-index: 2; /* Coloca o rodapé acima do overlay */
+            position: relative; /* Adiciona posição relativa para o z-index */
+        }
+
+        /* Media Queries para Responsividade */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5em; /* Tamanho da fonte do título reduzido */
+            }
+            p {
+                font-size: 1.2em; /* Tamanho da fonte do parágrafo reduzido */
+            }
+            .link {
+                font-size: 18px; /* Tamanho da fonte dos links reduzido */
+            }
+        }
+
+        @media (max-width: 400px) {
+            h1 {
+                font-size: 2.2em; /* Tamanho da fonte do título ainda menor */
+            }
+            p {
+                font-size: 1em; /* Tamanho da fonte do parágrafo ainda menor */
+            }
+            .link {
+                font-size: 16px; /* Tamanho da fonte dos links ainda menor */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div> <!-- Overlay adicionado -->
+    <h1>Riqueza em Convites</h1>
+    <p>Transforme suas ideias em arte! Criação de convites, cardápios e logotipos personalizados.</p>
+    
+    <a class="link" href="https://www.google.com/maps" target="_blank">
+        <i class="fas fa-map-marker-alt"></i> Como Chegar
+    </a>
+    <a class="link" href="mailto:contato@riquezaemconvites.com" target="_blank">
+        <i class="fas fa-comment-dots"></i> Fale Conosco
+    </a>
+    <a class="link" href="https://www.instagram.com/riquezaemconvites" target="_blank">
+        <i class="fab fa-instagram"></i> Instagram
+    </a>
+    <a class="link" href="https://www.facebook.com/riquezaemconvites" target="_blank">
+        <i class="fab fa-facebook"></i> Facebook
+    </a>
+    <a class="link" href="mailto:contato@riquezaemconvites.com" target="_blank">
+        <i class="fas fa-envelope"></i> Email
+    </a>
+
+    <footer>
+        <p>&copy; 2024 Riqueza em Convites. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
