@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Riqueza em Convites - Criação de convites digitais e artes personalizadas.">
     <title>Riqueza em Convites</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Link para Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -18,25 +19,26 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: center; /* Centraliza verticalmente */
-            align-items: center; /* Centraliza horizontalmente */
+            justify-content: center; 
+            align-items: center; 
         }
 
         img.logo {
-            height: 120px; /* Ajusta a altura da logo */
-            margin-bottom: 20px; /* Espaço abaixo da logo */
+            max-height: 120px; /* A altura máxima da logo */
+            width: auto; /* Manter proporção da logo */
+            margin-bottom: 20px; 
         }
 
         .link {
-            display: block; /* Para que cada link ocupe toda a largura */
-            margin: 10px 0; /* Espaço entre os links */
+            display: block; 
+            margin: 10px 0; 
             padding: 15px;
-            width: 80%; /* Largura dos botões */
-            max-width: 400px; /* Largura máxima dos botões */
-            font-size: 4vw; /* Tamanho da fonte responsivo */
+            width: 80%; 
+            max-width: 400px; 
+            font-size: 4vw; 
             text-decoration: none;
             color: #ffffff;
-            background: linear-gradient(135deg, rgba(255, 182, 193, 0.8), rgba(255, 215, 0, 0.8)); /* Gradiente suave */
+            background: linear-gradient(135deg, rgba(255, 182, 193, 0.8), rgba(255, 215, 0, 0.8));
             border-radius: 50px;
             transition: all 0.3s ease;
             font-weight: bold;
@@ -44,54 +46,54 @@
 
         .link:hover {
             background: linear-gradient(135deg, rgba(255, 182, 193, 1), rgba(255, 215, 0, 1));
-            transform: translateY(-3px); /* Sutil movimento ao passar o mouse */
+            transform: translateY(-3px);
         }
 
         .link i {
-            margin-right: 10px; /* Espaço entre o ícone e o texto */
-            font-size: 1.5em; /* Tamanho do ícone */
+            margin-right: 10px; 
+            font-size: 1.5em; 
         }
 
         footer {
-            margin-top: 20px; /* Ajusta a margem do rodapé */
-            font-size: 2vw; /* Tamanho do texto em vw para responsividade */
-            color: #FFD700; /* Cor do texto do rodapé alterada para amarelo */
-            text-shadow: none; /* Remove a sombra do texto */
+            margin-top: 20px; 
+            font-size: 2vw; 
+            color: #FFD700; 
+            text-shadow: none; 
         }
 
         @media (max-width: 600px) {
             .link {
-                font-size: 5vw; /* Aumenta o tamanho da fonte em telas menores */
+                font-size: 5vw; 
             }
             footer {
-                font-size: 4vw; /* Aumenta o tamanho da fonte do rodapé */
+                font-size: 4vw; 
             }
         }
 
         @media (max-width: 400px) {
             .link {
-                font-size: 6vw; /* Aumenta o tamanho da fonte em telas muito pequenas */
+                font-size: 6vw; 
             }
             footer {
-                font-size: 4.5vw; /* Ajusta o tamanho da fonte do rodapé */
+                font-size: 4.5vw; 
             }
         }
     </style>
 </head>
 <body>
 
-    <img class="logo" src="https://raw.githubusercontent.com/diogenesabreu/img/refs/heads/main/logo.png" alt="Riqueza em Convites"> <!-- Adicione sua logo aqui -->
+    <img class="logo" src="https://raw.githubusercontent.com/diogenesabreu/img/refs/heads/main/logo.png" alt="Riqueza em Convites">
 
-    <a class="link" href="https://www.google.com/maps" target="_blank">
+    <a class="link" href="https://www.google.com/maps" target="_blank" aria-label="Como Chegar">
         <i class="fas fa-map-marker-alt"></i> Como Chegar
     </a>
-    <a class="link" href="https://wa.me/555199999999" target="_blank">
+    <a class="link" href="https://wa.me/555199999999" target="_blank" aria-label="Fale conosco pelo WhatsApp">
         <i class="fab fa-whatsapp"></i> Fale Conosco
     </a>
-    <a class="link" href="https://www.instagram.com/riquezaemconvites" target="_blank">
+    <a class="link" href="https://www.instagram.com/riquezaemconvites" target="_blank" aria-label="Instagram da Riqueza em Convites">
         <i class="fab fa-instagram"></i> Instagram
     </a>
-    <a class="link" href="https://www.facebook.com/riquezaemconvites" target="_blank">
+    <a class="link" href="https://www.facebook.com/riquezaemconvites" target="_blank" aria-label="Facebook da Riqueza em Convites">
         <i class="fab fa-facebook"></i> Facebook
     </a>
     
