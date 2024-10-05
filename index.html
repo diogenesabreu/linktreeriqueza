@@ -10,7 +10,7 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(to bottom right, #F5F5DC, #FFD700); /* Gradiente de fundo */
+            background-color: #D1B69B; /* Cor de fundo */
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -54,7 +54,7 @@
         .link:hover {
             background-color: #FFD700;
             color: #fff; /* Texto branco no hover para contraste */
-            transform: translateY(-10px); /* Efeito mais elevado ao hover */
+            transform: translateY(-10px); /* Efeito elevado no hover */
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Sombra mais intensa no hover */
             border: 2px solid #FFD700;
         }
@@ -64,7 +64,7 @@
             font-size: 1.5em;
         }
 
-        /* Responsividade para telas menores */
+        /* Responsividade para telas médias */
         @media (max-width: 768px) {
             .logo {
                 max-width: 40%;
@@ -81,6 +81,7 @@
             }
         }
 
+        /* Responsividade para telas pequenas */
         @media (max-width: 480px) {
             .logo {
                 max-width: 60%;
@@ -96,11 +97,28 @@
                 font-size: 1.2em;
             }
         }
+
+        /* Responsividade para telas muito pequenas (smartphones menores) */
+        @media (max-width: 320px) {
+            .logo {
+                max-width: 70%;
+            }
+
+            .link {
+                padding: 8px 15px;
+                font-size: 1.2em;
+            }
+
+            .link i {
+                margin-right: 8px;
+                font-size: 1em;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <img src="https://raw.githubusercontent.com/diogenesabreu/img/refs/heads/main/IMG-20241004-WA0019-removebg-preview.png" alt="Logo" class="logo">
+    <img src="https://raw.githubusercontent.com/diogenesabreu/img/refs/heads/main/IMG-20241005-WA0064.jpg" alt="Logo" class="logo">
     
     <!-- Botão WhatsApp com ícone -->
     <a href="https://wa.me/seunumero" class="link">
